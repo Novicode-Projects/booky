@@ -10,6 +10,7 @@
 
 body {
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 a {
@@ -61,13 +62,18 @@ li {
     line-height: 19px;
 }
 
-.header__nav .actif { 
-    border-top-color: #0065FC;    
+#linkHebergements:hover, #linkHebergements:focus, #linkActivities:hover, #linkActivities:focus {
+    border-top: 2px solid #0065FC;
 }
 
+#linkHebergements:hover a, #linkHebergements:focus a, #linkActivities:hover a, #linkActivities:focus a {
+    color: #0065FC;
+}
+
+/*
 .header__nav .actif a{ 
     color: #0065FC; 
-}
+}*/
 
 
 /* Main */
@@ -78,7 +84,6 @@ li {
 }
 
 .main__title h1 {
-    
     color: #000000;
     font-weight: 700;
     font-size: 22px;
@@ -700,17 +705,13 @@ li {
         width: 50%;
     }
 
+    #linkHebergements:hover, #linkHebergements:focus, #linkActivities:hover, #linkActivities:focus {
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+
     .header__nav a {
         margin: 0;
-    }
-
-    .header__nav .actif {
-        border-bottom: 3px solid #0065FC;
-        margin-right: 0;
-    }
-
-    .header__nav .actif a{ 
-        color: #0065FC; 
     }
 
     .header__nav li:first-child {
@@ -756,7 +757,6 @@ li {
         justify-content: center;
     }
 
-
     .main__form input[type=search] {
         font-size: 15px;
         padding: 14px 14px;
@@ -785,6 +785,10 @@ li {
     .main__filters ul {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .main__filters li {
+        padding-right: 10px;
     }
 
     .main__filters button {
